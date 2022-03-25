@@ -7,24 +7,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Popes College | Student Login</title>
   <!-- FontAwesome Icons -->
-  <script src="https://kit.fontawesome.com/81d9f98219.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/94158acc5a.js" crossorigin="anonymous"></script>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- Styles -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-    * {
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+  <!-- Header Start -->
+  <header id="header" class="bg-white">
+    <div class="container-fluid mx-auto px-2 py-1 d-flex justify-content-between">
+      <div id="header-left" class="d-flex align-items-center">
+        <div id="logo">
+          <a href="./index.html">
+            <img src="./images/college-logo.png" alt="logo"">
+          </a>
+        </div>
+        <div id=" text" class="ms-3 d-none d-md-block">
+            <h4 class="text-primary fw-bold m-0">Pope's College (Autonomous)</h4>
+            <small>Sawyerpuram - 628 251</small> <br>
+            <small>Accredited by NAAC - II Cycle with 'A' Grade</small>
+        </div>
+      </div>
+      <div id="header-right" class="align-self-end">
+        <div id="text" class="small">
+          <span>Welcome!</span> <br>
+          <span class="fw-bold">
+            Christin Robinson (191405112)
+            <a href="#">
+              <span id="logout-btn" class="text-danger p-1"><i class="fa-solid fa-power-off"></i></span>
+            </a>
+          </span> <br>
+          <span>
+            Last Login Time : <span id="time" class="fw-bold"></span>
+            <a href="#">
+              <span id="history-btn" class="text-warning p-1"><i class="fa-solid fa-clock-rotate-left"></i></span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-lg-0">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white py-0 fw-bolder d-lg-none" href="home.html" target="hero_frame">POPE</a>
+        <button class="navbar-toggler fs-6" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html" target="hero_frame">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html" target="hero_frame">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" target="hero_frame">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header End -->
+  <!-- HeroFrame Start -->
+  <main>
+    <iframe src="./home.html" name="hero_frame" frameborder="0" class="h-100 w-100">
+    </iframe>
+  </main>
+  <!-- HeroFrame End -->
 
-
+  <!-- Footer Start -->
+  <footer class="container-fluid text-center bg-white border-top p-2">
+    &copy; Copyrights 2022.
+  </footer>
+  <!-- Footer End -->
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
